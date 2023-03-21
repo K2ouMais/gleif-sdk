@@ -2,8 +2,8 @@
 
 namespace K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents;
 
-use Saloon\Http\Request;
 use Saloon\Enums\Method;
+use Saloon\Http\Request;
 
 class UltimateParentReportingExceptions extends Request
 {
@@ -18,6 +18,6 @@ class UltimateParentReportingExceptions extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id . '/ultimate-parent-reporting-exception';
+        return '/v1/lei-records/'.$this->id.'/ultimate-parent-reporting-exception';
     }
 }

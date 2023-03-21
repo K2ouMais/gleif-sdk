@@ -2,8 +2,8 @@
 
 namespace K2ouMais\Gleif\Requests\LeiRecords\Lvl1Information;
 
-use Saloon\Http\Request;
 use Saloon\Enums\Method;
+use Saloon\Http\Request;
 
 class LeiRecordById extends Request
 {
@@ -18,6 +18,6 @@ class LeiRecordById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id;
+        return '/v1/lei-records/'.$this->id;
     }
 }
