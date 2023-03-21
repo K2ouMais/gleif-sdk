@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace K2ouMais\Gleif\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class GleifCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'gleif-sdk';
 
     public $description = 'My command';
 

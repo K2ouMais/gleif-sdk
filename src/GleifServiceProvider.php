@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace K2ouMais\Gleif;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use K2ouMais\Gleif\Commands\GleifCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class GleifServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('gleif-sdk')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_gleif-sdk_table')
+            ->hasCommand(GleifCommand::class);
     }
 }
