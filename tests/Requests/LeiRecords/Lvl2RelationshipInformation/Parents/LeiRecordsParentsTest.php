@@ -1,12 +1,12 @@
 <?php
 
 use K2ouMais\Gleif\GleifApi;
-use Symfony\Component\HttpFoundation\Response;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents\DirectParentLeiRecord;
-use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents\UltimateParentLeiRecord;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents\DirectParentRelationships;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents\DirectParentReportingExceptions;
+use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents\UltimateParentLeiRecord;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Parents\UltimateParentReportingExceptions;
+use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function () {
     $this->connector = new GleifApi();
@@ -15,7 +15,6 @@ beforeEach(function () {
 /**
  * Direct Parent
  */
-
 it('can request a direct parent lei record', function (string $id) {
     $request = $this->connector->send(new DirectParentLeiRecord($id));
 
@@ -40,7 +39,6 @@ it('can request the direct parent reporting exceptions', function (string $id) {
 /**
  * Ultimate Parent
  */
-
 it('can request an ultimate parent lei record', function (string $id) {
     $request = $this->connector->send(new UltimateParentLeiRecord($id));
 

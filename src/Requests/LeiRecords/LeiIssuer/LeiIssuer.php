@@ -2,8 +2,8 @@
 
 namespace K2ouMais\Gleif\Requests\LeiRecords\LeiIssuer;
 
-use Saloon\Http\Request;
 use Saloon\Enums\Method;
+use Saloon\Http\Request;
 
 class LeiIssuer extends Request
 {
@@ -18,6 +18,6 @@ class LeiIssuer extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id . '/lei-issuer';
+        return '/v1/lei-records/'.$this->id.'/lei-issuer';
     }
 }

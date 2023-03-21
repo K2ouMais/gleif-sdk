@@ -5,11 +5,11 @@
  */
 
 use K2ouMais\Gleif\GleifApi;
-use Symfony\Component\HttpFoundation\Response;
-use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\DirectChildren;
-use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\UltimateChildren;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\DirectChildRelationships;
+use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\DirectChildren;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\UltimateChildRelationships;
+use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\UltimateChildren;
+use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function () {
     $this->connector = new GleifApi();
@@ -18,7 +18,6 @@ beforeEach(function () {
 /**
  * Direct Children
  */
-
 it('can request a direct child relationships', function (string $id) {
     $request = $this->connector->send(new DirectChildRelationships($id));
 
@@ -36,7 +35,6 @@ it('can request the direct children', function (string $id) {
 /**
  * Ultimate Children
  */
-
 it('can request an ultimate child relationships', function (string $id) {
     $request = $this->connector->send(new UltimateChildRelationships($id));
 

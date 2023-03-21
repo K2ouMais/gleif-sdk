@@ -2,8 +2,8 @@
 
 namespace K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children;
 
-use Saloon\Http\Request;
 use Saloon\Enums\Method;
+use Saloon\Http\Request;
 
 class DirectChildren extends Request
 {
@@ -18,6 +18,6 @@ class DirectChildren extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id . '/direct-children';
+        return '/v1/lei-records/'.$this->id.'/direct-children';
     }
 }

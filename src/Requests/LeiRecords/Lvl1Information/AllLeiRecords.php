@@ -2,14 +2,15 @@
 
 namespace K2ouMais\Gleif\Requests\LeiRecords\Lvl1Information;
 
-use Saloon\Http\Request;
 use Saloon\Enums\Method;
+use Saloon\Http\Request;
 
 class AllLeiRecords extends Request
 {
     protected Method $method = Method::GET;
 
     protected int $pageSize;
+
     protected int $pageNumber;
 
     public function __construct(int $pageSize = 100, int $pageNumber = 1)
@@ -30,5 +31,4 @@ class AllLeiRecords extends Request
             'page[number]' => $this->pageNumber,
         ];
     }
-
 }
