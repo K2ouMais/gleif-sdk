@@ -43,6 +43,8 @@
     "scripts": {
         "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
         "test": "vendor/bin/pest",
+        "test-compact": "vendor/bin/pest --compact",
+        "test-parallel": "vendor/bin/pest --parallel --processes=8",
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "vendor/bin/pint"
     },
