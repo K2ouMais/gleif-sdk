@@ -1,6 +1,7 @@
 <?php
 
-// config for K2ouMais/Gleif
 return [
-
+    'gleif-api' => [
+        'url' => "https://api.gleif.org/api",
+    ],
 ];
