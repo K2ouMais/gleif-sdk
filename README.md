@@ -1,6 +1,6 @@
-# GLEIF-SDK
+# GLEIF-SDK for PHP
 
-The GLEIF-SDK provides a simple and object-oriented way for interaction with the [GLEIF-API](https://documenter.getpostman.com/view/7679680/SVYrrxuU?version=latest#e0f078b5-5c9c-426f-b045-dd258f9a5565) powered by [Saloon](https://docs.saloon.dev).
+The GLEIF-SDK provides a simple and object-oriented way for interaction with the [GLEIF-API](https://documenter.getpostman.com/view/7679680/SVYrrxuU?version=latest#e0f078b5-5c9c-426f-b045-dd258f9a5565) powered by [Saloon](https://docs.saloon.dev) for PHP.
 
 ## Installation
 
