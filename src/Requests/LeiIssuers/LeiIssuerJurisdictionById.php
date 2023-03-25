@@ -18,6 +18,6 @@ class LeiIssuerJurisdictionById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-issuers/' . $this->id . '/jurisdictions';
+        return '/v1/lei-issuers/'.$this->id.'/jurisdictions';
     }
 }

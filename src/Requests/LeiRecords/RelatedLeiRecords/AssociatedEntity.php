@@ -18,6 +18,6 @@ class AssociatedEntity extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id . '/associated-entity';
+        return '/v1/lei-records/'.$this->id.'/associated-entity';
     }
 }

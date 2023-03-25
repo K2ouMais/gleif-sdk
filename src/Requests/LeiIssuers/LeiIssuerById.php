@@ -18,6 +18,6 @@ class LeiIssuerById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-issuers/' . $this->id;
+        return '/v1/lei-issuers/'.$this->id;
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
 use K2ouMais\Gleif\GleifApi;
-use Symfony\Component\HttpFoundation\Response;
+use K2ouMais\Gleif\Requests\LeiRecords\RelatedLeiRecords\AssociatedEntity;
 use K2ouMais\Gleif\Requests\LeiRecords\RelatedLeiRecords\ManagingLou;
 use K2ouMais\Gleif\Requests\LeiRecords\RelatedLeiRecords\SuccessorEntity;
-use K2ouMais\Gleif\Requests\LeiRecords\RelatedLeiRecords\AssociatedEntity;
+use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function () {
     $this->connector = new GleifApi();

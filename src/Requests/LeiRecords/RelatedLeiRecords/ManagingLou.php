@@ -18,6 +18,6 @@ class ManagingLou extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id . '/managing-lou';
+        return '/v1/lei-records/'.$this->id.'/managing-lou';
     }
 }

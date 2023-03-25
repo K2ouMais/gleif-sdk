@@ -14,9 +14,9 @@ class AutoCompletions extends Request
     private string $field;
 
     /**
-     * @param string $search
+     * @param  string  $search
      * Example: Apple
-     * @param string $filter
+     * @param  string  $filter
      * Default: fulltext (Options: 'fulltext', 'owns' or 'ownedBy')
      */
     public function __construct(string $search, string $field = 'fulltext')

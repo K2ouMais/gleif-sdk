@@ -1,11 +1,11 @@
 <?php
 
 use K2ouMais\Gleif\GleifApi;
-use Symfony\Component\HttpFoundation\Response;
-use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\DirectChildren;
-use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\UltimateChildren;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\DirectChildRelationships;
+use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\DirectChildren;
 use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\UltimateChildRelationships;
+use K2ouMais\Gleif\Requests\LeiRecords\Lvl2RelationshipInformation\Children\UltimateChildren;
+use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function () {
     $this->connector = new GleifApi();

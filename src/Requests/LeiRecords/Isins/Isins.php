@@ -18,6 +18,6 @@ class Isins extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/lei-records/' . $this->id . '/isins';
+        return '/v1/lei-records/'.$this->id.'/isins';
     }
 }
