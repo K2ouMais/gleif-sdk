@@ -18,6 +18,6 @@ class RegistrationAgentById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/registration-agents/' . $this->id;
+        return '/v1/registration-agents/'.$this->id;
     }
 }

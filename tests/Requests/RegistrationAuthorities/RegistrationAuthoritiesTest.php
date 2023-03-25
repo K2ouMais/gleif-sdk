@@ -1,9 +1,9 @@
 <?php
 
 use K2ouMais\Gleif\GleifApi;
-use Symfony\Component\HttpFoundation\Response;
-use K2ouMais\Gleif\Requests\RegistrationAuthorities\RegistrationAuthorityById;
 use K2ouMais\Gleif\Requests\RegistrationAuthorities\AllRegistrationAuthorities;
+use K2ouMais\Gleif\Requests\RegistrationAuthorities\RegistrationAuthorityById;
+use Symfony\Component\HttpFoundation\Response;
 
 beforeEach(function () {
     $this->connector = new GleifApi();
