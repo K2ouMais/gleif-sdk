@@ -18,6 +18,6 @@ class RegionById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/regions/' . $this->id;
+        return '/v1/regions/'.$this->id;
     }
 }

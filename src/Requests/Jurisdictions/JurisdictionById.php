@@ -18,6 +18,6 @@ class JurisdictionById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/jurisdictions/' . $this->id;
+        return '/v1/jurisdictions/'.$this->id;
     }
 }

@@ -18,6 +18,6 @@ class RegistrationAuthorityById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/registration-authorities/' . $this->id;
+        return '/v1/registration-authorities/'.$this->id;
     }
 }

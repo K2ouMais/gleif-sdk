@@ -18,6 +18,6 @@ class EntityLegalFormById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/entity-legal-forms/' . $this->id;
+        return '/v1/entity-legal-forms/'.$this->id;
     }
 }

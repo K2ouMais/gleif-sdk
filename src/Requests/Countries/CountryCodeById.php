@@ -18,6 +18,6 @@ class CountryCodeById extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/countries/' . $this->id;
+        return '/v1/countries/'.$this->id;
     }
 }

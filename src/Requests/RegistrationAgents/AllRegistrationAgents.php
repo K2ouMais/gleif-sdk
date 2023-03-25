@@ -10,6 +10,7 @@ class AllRegistrationAgents extends Request
     protected Method $method = Method::GET;
 
     private string $leiIssuer;
+
     private string $lei;
 
     public function __construct(string $leiIssuer = '', string $lei = '')
