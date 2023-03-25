@@ -12,5 +12,7 @@ it('can request a lei issuer (ManagingLOU)', function () {
     $request = $this->connector->send(new LeiIssuer('5299000J2N45DDNE4Y28'));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 });

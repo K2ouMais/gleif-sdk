@@ -19,21 +19,27 @@ it('can request a direct parent lei record', function (string $id) {
     $request = $this->connector->send(new DirectParentLeiRecord($id));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 })->with('direct-parent-lei-records');
 
 it('can request the direct parent relationships', function (string $id) {
     $request = $this->connector->send(new DirectParentRelationships($id));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 })->with('direct-parent-lei-records');
 
 it('can request the direct parent reporting exceptions', function (string $id) {
     $request = $this->connector->send(new DirectParentReportingExceptions($id));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 })->with('direct-parent-exceptions');
 
 /**
@@ -43,19 +49,25 @@ it('can request an ultimate parent lei record', function (string $id) {
     $request = $this->connector->send(new UltimateParentLeiRecord($id));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 })->with('ultimate-parent-lei-records');
 
 it('can request the ultimate parent relationships', function (string $id) {
     $request = $this->connector->send(new UltimateParentLeiRecord($id));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 })->with('ultimate-parent-lei-records');
 
 it('can request the ultimate parent reporting exceptions', function (string $id) {
     $request = $this->connector->send(new UltimateParentReportingExceptions($id));
 
     expect($request->status())
-        ->toBe(Response::HTTP_OK);
+        ->toBe(Response::HTTP_OK)
+        ->and($request->body())
+        ->toBeJson('It is not a Json body');
 })->with('ultimate-parent-exceptions');
