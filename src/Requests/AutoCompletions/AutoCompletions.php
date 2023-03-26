@@ -27,7 +27,7 @@ class AutoCompletions extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v1/fuzzycompletions';
+        return '/v1/autocompletions';
     }
 
     protected function defaultQuery(): array
